@@ -3,6 +3,7 @@ import HomePage from "../pages/HomePage";
 import NotFoundPage from "../pages/NotFoundPage";
 import { TicketsIndex } from "../pages/tickets/TicketsIndex";
 import TicketsCreatePage from "../pages/tickets/TicketsCreatePage";
+import TicketsDetailsPage from "../pages/tickets/TicketsDetailsPage";
 
 const Global = () => {
 	return (
@@ -11,6 +12,7 @@ const Global = () => {
 			<Route path="/tickets">
 				<Route index element={<TicketsIndex />} />
 				<Route path="create" element={<TicketsCreatePage />} />
+				<Route path=":id" element={<TicketsDetailsPage />} />
 			</Route>
 			<Route path="/404" element={<NotFoundPage />} />
 			<Route path="*" element={<Navigate to="/404" />} />

@@ -6,6 +6,9 @@
     .pageGeneralClass {
         @apply bg-white p-4 md:p-8;
     }
+    .ticketDetailsRow {
+        @apply text-lg font-bold text-slate-500 mr-4;
+    }
 }
 
 input {
